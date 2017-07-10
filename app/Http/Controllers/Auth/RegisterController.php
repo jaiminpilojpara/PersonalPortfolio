@@ -36,7 +36,8 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        // $this->middleware('guest'); //to Redirect on Registration Page
+        $this->middleware('auth'); // to Redirect on Login Page
     }
 
     /**
